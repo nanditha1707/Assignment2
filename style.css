@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #f1f1f1; /* Background color for the first navbar */
+}
+
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.navbar a:hover {
+    color: darkblue;
+}
+
+.second-navbar {
+    display: flex;
+    align-items: center;
+    background-color: black; /* Background color for the second navbar */
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs a {
+    color: white;
+    text-align: center;
+    padding: 14px 80px;
+    text-decoration: none;
+    background-color: black;
+}
+
+.tabs a:hover {
+    color: lightblue;
+}
+
+.small-logo {
+    height: 30px; /* Adjust the height */
+    margin-left: 400px; /* Add some spacing between tabs and logo */
+}
+
+.content {
+    padding: 50px;
+}
+
+/* Hide all content elements by default */
+.content div {
+    display: none;
+}
+
+/* Show the selected content element */
+:target {
+    display: block;
+}
