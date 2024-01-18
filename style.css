@@ -169,7 +169,7 @@ body {
     margin: 0;
     text-align: left;
     font-weight: bold;
-    color: black; /* Set the color you prefer for the text */
+    color: black; /* color for the text */
     position: relative;
     top: 5px; 
 }
@@ -177,7 +177,7 @@ body {
 .second-frame {
     background-color: white;
     padding: 20px;
-    margin-top: 20px; /* Adjust the top margin to create space between frames */
+    margin-top: 20px; /* top margin to create space between frames */
     margin-bottom: 10px;
 }
 
@@ -189,7 +189,7 @@ body {
 .box {
     width: 30%; /* Adjust the width of each box */
     height: 350px;
-    background-color: rgb(173, 173, 173); /* Adjust the background color of each box */
+    background-color: rgb(173, 173, 173); /* background color of each box */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -230,8 +230,8 @@ body {
 
 .box p {
     text-align: left; /* Center the text */
-    margin-top: 10px; /* Add some space between the inner box and the text */
-    color: #fff; /* Set the text color */
+    margin-top: 10px; /* Add space between the inner box and the text */
+    color: #fff; /* text color */
     font-weight: bold;
     padding-left: 10px;
     line-height: 1.5;
@@ -242,9 +242,9 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 40px; /* Adjust the width of the side box as needed */
+    width: 40px; 
     height: 20px;
-    background-color: #6e298d; /* Adjust the background color of the side box */
+    background-color: #6e298d; 
     padding: 7px;
     margin-top: -50px;
     border-radius: 10px;
@@ -264,9 +264,9 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 40px; /* Adjust the width of the side box as needed */
+    width: 40px; 
     height: 20px;
-    background-color: #e2374b; /* Adjust the background color of the side box */
+    background-color: #e2374b; 
     padding: 7px;
     margin-top: -50px;
     border-radius: 10px;
@@ -276,7 +276,7 @@ body {
 .box .side-box2 p {
     margin: 0; /* Remove default margin for the paragraph */
     line-height: 1; /* Adjust line-height to center vertically */
-    color: #fff; /* Set the text color */
+    color: #fff; 
     font-weight: bold;
     margin-left: -5px;
 }
@@ -298,7 +298,7 @@ body {
 .box .side-box3 p {
     margin: 0; /* Remove default margin for the paragraph */
     line-height: 1; /* Adjust line-height to center vertically */
-    color: #fff; /* Set the text color */
+    color: #fff;
     font-weight: bold;
     margin-left: -5px;
 }
