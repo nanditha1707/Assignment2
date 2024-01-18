@@ -125,4 +125,180 @@ body {
     bottom: 0;             
 
 }
-  
+
+/* ict pg */
+.frame {
+    background-color: white;
+    padding: 20px;
+    text-align: center; /* Center the navigation path */
+}
+
+.navigation-path {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navigation-path a {
+    text-decoration: none;
+    color: black; /* Set the color you prefer for the links */
+    font-weight: bold; /* Optionally, make the links bold */
+    margin: 10px; /* Add some spacing between links */
+}
+
+.colored-rectangle {
+    background-color: #4b3f72;
+    height: 70px; /* Adjust the height as needed */
+    border-radius: 10px;
+    position: relative;
+}
+
+.white-curved-rectangle {
+    background-color: white;
+    border-radius: 10px; /* Adjust the border-radius for curved edges */
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translate(0, -50%); /* Center the element */
+    width: 550px; 
+    height: 30px;
+}
+
+.white-curved-rectangle p {
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+    color: black; /* Set the color you prefer for the text */
+    position: relative;
+    top: 5px; 
+}
+
+.second-frame {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px; /* Adjust the top margin to create space between frames */
+    margin-bottom: 10px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 30%; /* Adjust the width of each box */
+    height: 350px;
+    background-color: rgb(173, 173, 173); /* Adjust the background color of each box */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px 10px;
+}
+
+.third-frame {
+    background-color: white;
+    padding: 20px;
+}
+
+.third-frame .box-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.third-frame .box {
+    width: 30%;
+    height: 350px;
+    background-color: rgb(173, 173, 173);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px 10px;
+}
+
+.inner-box {
+    position: relative; /* Add relative positioning */
+    width: 105.5%;
+    height: 270px;
+    background-color: lightgray;
+    border-radius: 10px 10px 0 0; /* Border radius only on the top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0; /* Adjust the margin-top to move the inner box up */
+    margin-left: -10px;
+    top: -11px;
+}
+
+.box p {
+    text-align: left; /* Center the text */
+    margin-top: 10px; /* Add some space between the inner box and the text */
+    color: #fff; /* Set the text color */
+    font-weight: bold;
+    padding-left: 10px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.box .side-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 40px; /* Adjust the width of the side box as needed */
+    height: 20px;
+    background-color: #6e298d; /* Adjust the background color of the side box */
+    padding: 7px;
+    margin-top: -50px;
+    border-radius: 10px;
+    margin-left: 300px;
+}
+
+.box .side-box p {
+    margin: 0; /* Remove default margin for the paragraph */
+    line-height: 1; /* Adjust line-height to center vertically */
+    color: #fff; /* Set the text color */
+    font-weight: bold;
+    margin-left: -5px;
+}
+
+/* BA page */
+.box .side-box2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 40px; /* Adjust the width of the side box as needed */
+    height: 20px;
+    background-color: #e2374b; /* Adjust the background color of the side box */
+    padding: 7px;
+    margin-top: -50px;
+    border-radius: 10px;
+    margin-left: 300px;
+}
+
+.box .side-box2 p {
+    margin: 0; /* Remove default margin for the paragraph */
+    line-height: 1; /* Adjust line-height to center vertically */
+    color: #fff; /* Set the text color */
+    font-weight: bold;
+    margin-left: -5px;
+}
+
+/* DE page */
+.box .side-box3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 40px; /* Adjust the width of the side box as needed */
+    height: 20px;
+    background-color: #6e9a43; /* Adjust the background color of the side box */
+    padding: 7px;
+    margin-top: -50px;
+    border-radius: 10px;
+    margin-left: 300px;
+}
+
+.box .side-box3 p {
+    margin: 0; /* Remove default margin for the paragraph */
+    line-height: 1; /* Adjust line-height to center vertically */
+    color: #fff; /* Set the text color */
+    font-weight: bold;
+    margin-left: -5px;
+}
