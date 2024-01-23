@@ -305,19 +305,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ELR2B2 page */
 .course {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -325,6 +313,8 @@ body {
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
+    border-radius: 5px; /* Adjust the value as needed */
+    overflow: hidden;
 }
 
 .course td,
@@ -344,3 +334,9 @@ body {
     background-color: #4b504e;
     color: white;
 }
+
+
+
+
+
+
