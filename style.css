@@ -88,6 +88,19 @@ body {
     margin-bottom: 100px;
 }
 
+/* try for index.html for expanded img
+.picture-below-navbar1 {
+    text-align: center; 
+    margin-bottom: 20px;
+  
+  .picture-below-navbar1 img {
+    width: 100%;         
+    height: auto;        
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 100px;
+  }
+*/ 
+
 /* circles - different schools */
 .picture-section {
     background-color: rgb(52, 50, 60);
@@ -111,6 +124,27 @@ body {
     height: 151px;
     object-fit: fill;
     border-radius: 50%; /* Make the images circular */
+  }
+
+  /* Rectangle below the image row */
+.unsure-rectangle {
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+  
+.unsure-rectangle p {
+    color: black; /* Set the text color to white or your preferred color */
+    font-size: 18px; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+.rectangle-link {
+    display: block; /* Make the anchor a block-level element to fill the width of its container */
+    text-decoration: none; /* Remove underline from the link, if desired */
   }
 
 /* Additional styles for the footer */
@@ -443,6 +477,7 @@ body {
     margin-top: 50px;
     border-radius: 5px; /* Adjust the value as needed */
     overflow: hidden;
+    border-color: 2px solid black;
 }
 
 .course td,
@@ -453,6 +488,7 @@ body {
 
 .course tr:nth-child(even) {
     background-color: #f2f2f2;
+
 }
 
 .course th {
@@ -461,6 +497,7 @@ body {
     text-align: left;
     background-color: #4b504e;
     color: white;
+
 }
 
 
