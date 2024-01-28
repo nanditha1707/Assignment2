@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Xplore Page</title>
+  <title>Xplore</title>
 </head>
 <body>
     <!--first row of navbar with logo-->
@@ -23,4 +23,27 @@
           <a href="#">Contact Us</a>
       </div>
       <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
-    </div>
+  </div>
+  <!--game content-->
+  <div id="quiz-container">
+    <div id="question-container" class="question"></div>
+    <div id="options-container" class="options"></div>
+    <div id="result"></div>
+    <!-- Disable the button initially -->
+    <button id="nextButton" onclick="nextQuestion()" disabled>Next Question</button>
+
+    <script src="script.js"></script>
+  </div>
+
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Get to know more about NP. All rights reserved.</p>
+  </footer>
+
+  
+
+</body>
+</html>
+
+
