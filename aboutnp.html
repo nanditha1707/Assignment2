@@ -18,13 +18,23 @@
     </div>
     <!--second row of navbar with 4 tabs-->
     <div class="second-navbar">
-      <div class="tabs">
-          <a href="aboutnp.html">About NP</a>
-          <a href="schNcourses.html">Schools & Courses</a>
-          <a href="#">Contact Us</a>
+        <div class="tabs">
+            <a href="aboutnp.html">About NP</a>
+            <button class="dropdown-btn" onclick="toggleDropdown()">Schools & Courses</button>
+  
+            <div class="dropdown" id="myDropdown">
+              <div class="dropdown-content">
+                  <a href="FullTimeCourses.html">Full Time Courses</a>
+                  <a href="#">Part Time Courses</a>
+                  <a href="#">PLP</a>
+                  <a href="#">School Brochures</a>
+              </div>
+          </div>
+          <script src="script1.js"></script>
+            <a href="#">Contact Us</a>
+        </div>
+        <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
       </div>
-      <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
-    </div>
 
     <div class="infoFrame frame">
         <h2>Our Story</h2>

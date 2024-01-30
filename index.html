@@ -19,11 +19,22 @@
     <div class="second-navbar">
       <div class="tabs">
           <a href="aboutnp.html">About NP</a>
-          <a href="schNcourses.html">Schools & Courses</a>
+          <button class="dropdown-btn" onclick="toggleDropdown()">Schools & Courses</button>
+
+          <div class="dropdown" id="myDropdown">
+            <div class="dropdown-content">
+                <a href="FullTimeCourses.html">Full Time Courses</a>
+                <a href="#">Part Time Courses</a>
+                <a href="#">PLP</a>
+                <a href="#">School Brochures</a>
+            </div>
+          </div>
+        <script src="script1.js"></script>
           <a href="#">Contact Us</a>
       </div>
       <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
-  </div>
+    </div>
+
   <!--picture content-->
   <div class="picture-below-navbar">
     <img src="pic/npwholeview.jpg" alt="Description of the image">

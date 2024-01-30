@@ -500,7 +500,6 @@ body {
 
 }
 
-<<<<<<< HEAD
 /* aboutnp pg */
 .infoFrame {
     background-color: #f0f0f0; 
@@ -537,7 +536,7 @@ body {
 .goal-box h3 {
     margin-bottom: 10px;
 }
-=======
+
 /*for Xplore page*/
 
 #quiz-container {
@@ -550,7 +549,7 @@ body {
     text-align: center;
     margin-top: 50px; 
     margin-bottom: 20px;
->>>>>>> 9a53bd97b58e9ece7350905062c049d550fa5bf7
+}
 
 .question {
     font-size: 22px;
@@ -593,11 +592,11 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px; /* Add margin-top */
 }
 
 button:hover {
-    background-color: rgb(111, 151, 168);
+    background-color: black;
+    color: lightblue;
 }
 
 /* Add a class to style a disabled button */
@@ -605,3 +604,58 @@ button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
+
+/* Dropdown */
+.dropdown {
+  position: fixed;
+  top: 0;
+  left: 20;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.dropdown-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 20%;
+  max-width: 500px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  border-radius: 8px;
+  z-index: 1001;
+}
+
+.dropdown a {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dropdown a:hover {
+  color: #fff;
+  background-color: black;
+}
+
+.dropdown-btn {
+  cursor: pointer;
+  padding: 14px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+
+
+
+
+
+
