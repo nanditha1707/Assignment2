@@ -284,9 +284,50 @@
         </tr>
     </table>
 
-    <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Get to know more about NP. All rights reserved.</p>
-  </footer>
+        <!-- Footer -->
+        <footer>
+            <div class="contact-info">
+              <h3>Contact Us</h3>
+              <p>535 Clementi Road Singapore 599489</p>
+              <p>6466 6555</p>
+              <p>asknp@np.edu.sg</p>
+            </div>
+    
+            <div class="quick-links">
+              <h3>Quick Links</h3>
+              <p><a href="https://portal.np.edu.sg/Pages/StudentHome.aspx">Student Portal</a></p>
+              <p><a href="https://npalstudent.np.edu.sg/psc/student/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL">NPal</a></p>
+              <p><a href="https://outlook.office.com/mail/">Connect Mail</a></p>
+          </div>
+          
+    
+            <div class="footer-column">
+              <div class="newsletter">
+                  <h3>Connect With Us</h3>
+                  <button onclick="openModal()">SUBSCRIBE NOW</button>
+              </div>
+          </div>
+          </footer>
+    
+          <footer class= "second-footer">
+            <p>&copy; 2024 Get to know more about NP. All rights reserved.</p>
+          </footer>
+    
+          <section id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close" onclick="closeModal()">&times;</div>
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Interested to know more about NP? Get the latest updates via our newsletter</p>
+                <form>
+                    <p><label for="email">Email:</label></p>
+                    <input type="email" id="email" name="email" required>
+                    <p><label for="password">Password:</label></p>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" onclick="submitForm()">Subscribe Now</button>
+                </form>
+            </div>
+        </section>
+        <script src="script.js"></script>
+        
 </body>
 </html>
