@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="jsfile/dropdown.js"></script>
   <title>Xplore</title>
 </head>
 <body>
@@ -19,12 +20,20 @@
     <div class="second-navbar">
       <div class="tabs">
           <a href="aboutnp.html">About NP</a>
-          <a href="schNcourses.html">Schools & Courses</a>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Schools & Courses</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="FullTimeCourses.html">Full Time Courses</a>
+                <a href="#">Part Time Courses</a>
+                <a href="#">PLP</a>
+                <a href="#">School Brochures</a>
+            </div>
+          </div>
           <a href="#">Contact Us</a>
       </div>
       <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
-
-   
+    </div>
+ 
 
   </div>
   <!--game content-->
@@ -35,7 +44,7 @@
     <!-- Disable the button initially -->
     <button id="nextButton" onclick="nextQuestion()" disabled>Next Question</button>
 
-    <script src="script.js"></script>
+    <script src="jsfile/script.js"></script>
   </div>
 
       <!-- Footer -->
@@ -84,6 +93,4 @@
 
 </body>
 </html>
-
-
 

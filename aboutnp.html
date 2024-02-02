@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>About NP</title>
+  <script src="jsfile/dropdown.js"></script>
+  <title>BA Page</title>
+
 </head>
 
 <body>
@@ -18,12 +21,20 @@
     </div>
     <!--second row of navbar with 4 tabs-->
     <div class="second-navbar">
-      <div class="tabs">
-          <a href="aboutnp.html">About NP</a>
-          <a href="schNcourses.html">Schools & Courses</a>
-          <a href="#">Contact Us</a>
-      </div>
-      <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
+        <div class="tabs">
+            <a href="aboutnp.html">About NP</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">Schools & Courses</button>
+              <div class="dropdown-content" id="myDropdown">
+                  <a href="FullTimeCourses.html">Full Time Courses</a>
+                  <a href="#">Part Time Courses</a>
+                  <a href="#">PLP</a>
+                  <a href="#">School Brochures</a>
+              </div>
+            </div>
+            <a href="#">Contact Us</a>
+        </div>
+        <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
     </div>
 
     <div class="infoFrame frame">

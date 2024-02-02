@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="jsfile/dropdown.js"></script>
   <title>Home Page</title>
 </head>
 <body>
@@ -19,15 +20,31 @@
     <div class="second-navbar">
       <div class="tabs">
           <a href="aboutnp.html">About NP</a>
-          <a href="schNcourses.html">Schools & Courses</a>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Schools & Courses</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="FullTimeCourses.html">Full Time Courses</a>
+                <a href="#">Part Time Courses</a>
+                <a href="#">PLP</a>
+                <a href="#">School Brochures</a>
+            </div>
+          </div>
           <a href="#">Contact Us</a>
       </div>
       <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
-  </div>
+    </div>
+
   <!--picture content-->
-  <div class="picture-below-navbar">
-    <img src="pic/npwholeview.jpg" alt="Description of the image">
+  <div class="picture-below-navbar1">
+    <img src="pic/Untitled design.png" alt="Description of the image">
   </div>
+
+  <!-- Three boxes below the picture -->
+<div class="threeboxes">
+  <div class="threesmallbox"><a href="FullTimeCourses.html"> Our Courses</a></div>
+  <div class="threesmallbox"><a href="#">Student Life</a></div>
+  <div class="threesmallbox"><a href="#">Industry & Partnership</a></div>
+</div>
 
       <!-- Footer -->
       <footer>
