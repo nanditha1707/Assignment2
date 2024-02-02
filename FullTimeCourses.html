@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Schools & Courses Page</title>
+  <script src="jsfile/dropdown.js"></script>
+  <title>FullTime Courses Page</title>
 </head>
 <body>
     <!--first row of navbar with logo-->
@@ -19,17 +20,15 @@
     <div class="second-navbar">
       <div class="tabs">
           <a href="aboutnp.html">About NP</a>
-          <button class="dropdown-btn" onclick="toggleDropdown()">Schools & Courses</button>
-
-          <div class="dropdown" id="myDropdown">
-            <div class="dropdown-content">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Schools & Courses</button>
+            <div class="dropdown-content" id="myDropdown">
                 <a href="FullTimeCourses.html">Full Time Courses</a>
                 <a href="#">Part Time Courses</a>
                 <a href="#">PLP</a>
                 <a href="#">School Brochures</a>
             </div>
-        </div>
-        <script src="script1.js"></script>
+          </div>
           <a href="#">Contact Us</a>
       </div>
       <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
@@ -56,7 +55,7 @@
 
     <a href="Xplore.html" class="rectangle-link">
       <div class="unsure-rectangle">
-        <p>Get to Know more about NP!<br><u>Click Here to find out more</u></p>
+        <p><b>Get to Know more about NP!</b><br><u>Click Here to find out more</u></p>
       </div>
     </a>
   </div>
