@@ -1,5 +1,4 @@
 //for the Xplore page
-
 const questions = [
     {
       question: 'What is the capital of France?',
@@ -97,14 +96,4 @@ const questions = [
   loadQuestion();
 
 
-  // footer form
-  function openModal() {
-    document.getElementById('modal').style.display = 'block';
-}
-function closeModal() {
-   document.getElementById('modal').style.display = 'none';
-}
-function submitForm() {
-   closeModal();
-}
 
