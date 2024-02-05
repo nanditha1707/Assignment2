@@ -109,7 +109,6 @@ body {
     flex: 1;
     padding: 150px;
     background-color: white;
-    border: 1px solid #ccc;
     margin: 0;
     text-align: center;
     text-decoration: none; 
@@ -118,7 +117,7 @@ body {
 
 .threesmallbox:hover {
     background-color: whitesmoke; 
-    color: rgb(124, 154, 156); 
+    color: white; 
 }
 
 .threesmallbox a {
@@ -129,6 +128,18 @@ body {
 .threesmallbox a:hover {
     text-decoration: none;  
     color: inherit; 
+}
+
+.threesmallbox.student-life-box {
+    background-color: #23b27c; 
+}
+
+.threesmallbox.courses-box {
+    background-color: #9b8dc8; 
+}
+
+.threesmallbox.industry-box {
+    background-color: #6aabcc; 
 }
 
 /* circles - different schools */
@@ -231,7 +242,7 @@ footer {
     }
 }
 
-/*fotter form*/
+/*footer form*/
 .modal {
     display: none;
     position: fixed;
@@ -363,7 +374,7 @@ footer {
 .box {
     width: 30%; /* Adjust the width of each box */
     height: 350px;
-    background-color: rgb(173, 173, 173); /* background color of each box */
+    background-color: white; /* background color of each box */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -383,7 +394,7 @@ footer {
 .third-frame .box {
     width: 30%;
     height: 350px;
-    background-color: rgb(173, 173, 173);
+    background-color: white;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -403,7 +414,7 @@ footer {
 .fourth-frame .box {
     width: 30%;
     height: 350px;
-    background-color: rgb(173, 173, 173);
+    background-color: white;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -426,7 +437,7 @@ footer {
 .box p {
     text-align: left; /* Center the text */
     margin-top: 10px; /* Add space between the inner box and the text */
-    color: #fff; /* text color */
+    color: black; /* text color */
     font-weight: bold;
     padding-left: 10px;
     line-height: 1.5;
@@ -684,6 +695,14 @@ footer {
 }
 
 /*for Xplore page*/
+#lottie-container {
+    position: absolute;
+    top: -1;
+    left: 0;
+    width: 100vw; /* Use viewport width for 100% width */
+    height: 100vh; /* Use viewport height for 100% height */
+    z-index: -1;
+}
 
 #quiz-container {
     max-width: 600px;
@@ -696,9 +715,6 @@ footer {
     margin-top: 200px; 
     margin-bottom: 200px;
 }
-    
-
-
 
 .question {
     font-size: 22px;
@@ -863,7 +879,7 @@ display: block;
 
 .slideshow-container img {
     width: 100%;
-    height: 400px; /* Set a fixed height for all images */
+    height: 450px; /* Set a fixed height for all images */
     object-fit: cover; /* Ensure the image covers the fixed height */
 }
 

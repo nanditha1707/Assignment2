@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Home Page</title>
+  <script src="jsfile/dropdown.js"></script>
+  <title>Brochures Page</title>
 </head>
 <body>
     <!--first row of navbar with logo-->
@@ -17,13 +18,21 @@
     </div>
     <!--second row of navbar with 4 tabs-->
     <div class="second-navbar">
-      <div class="tabs">
-          <a href="aboutnp.html">About NP</a>
-          <a href="schNcourses.html">Schools & Courses</a>
-          <a href="#">Contact Us</a>
+        <div class="tabs">
+            <a href="aboutnp.html">About NP</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">Schools & Courses</button>
+              <div class="dropdown-content" id="myDropdown">
+                  <a href="FullTimeCourses.html">Full Time Courses</a>
+                  <a href="https://www.cet.np.edu.sg/">Part Time Courses</a>
+                  <a href="https://www.np.edu.sg/schools-courses/plp-minors">PLP</a>
+                  <a href="brochure.html">School Brochures</a>
+              </div>
+            </div>
+            <a href="#">Contact Us</a>
+        </div>
+        <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
       </div>
-      <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
-    </div>
 
     <!--brouchere pdfs-->
   <div class="pdf-container">
