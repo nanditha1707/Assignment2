@@ -770,6 +770,7 @@ button:disabled {
     cursor: not-allowed;
 }
 
+
 /* Video */
 .video-container {
     display: flex;
@@ -866,7 +867,6 @@ display: block;
 
 
 /* index page */
-/* style.css */
 .slideshow-container {
     max-width: auto;
     position: relative;
