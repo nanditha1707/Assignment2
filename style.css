@@ -99,10 +99,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
+/* for index bottom 3 */
+
 .threeboxes {
     display: flex;
     justify-content: space-around;
-    background-color: #f1f1f1; /* Background color for the boxes container */
+    background-color: #f1f1f1;
+    margin: 0; /* Background color for the boxes container */
+    padding: 0;
 }
 
 .threesmallbox {
@@ -113,11 +117,14 @@ body {
     text-align: center;
     text-decoration: none; 
     color: black;
+    transition: transform 0.3s ease-in-out;
 }
+
 
 .threesmallbox:hover {
     background-color: whitesmoke; 
     color: white; 
+    transform: scale(1.03);
 }
 
 .threesmallbox a {
@@ -131,16 +138,20 @@ body {
 }
 
 .threesmallbox.student-life-box {
-    background-color: #23b27c; 
+    background-size: cover;
+    background-image: url('index/StudentLife.png');
 }
 
 .threesmallbox.courses-box {
-    background-color: #9b8dc8; 
+    background-size: cover;
+    background-image: url('index/course.png');
 }
 
 .threesmallbox.industry-box {
-    background-color: #6aabcc; 
+    background-size: cover; 
+    background-image: url('index/industry.png');
 }
+
 
 /* circles - different schools */
 .picture-section {
@@ -153,6 +164,11 @@ margin-top: 20px;
 display: flex;
 justify-content: center;
 margin-bottom: 35px; /* Adjust as needed for spacing between rows */
+transition: transform 0.3s ease-in-out;
+}
+
+.picture-row a:hover {
+    transform: scale(1.04); /* Adjust the scale factor to make it smaller */
 }
 
 .picture-row a {
@@ -364,11 +380,16 @@ footer {
     padding: 20px;
     margin-top: 20px; /* top margin to create space between frames */
     margin-bottom: 10px;
+        display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .box-container {
     display: flex;
     justify-content: space-around;
+    
+    
 }
 
 .box {
@@ -455,6 +476,11 @@ footer {
     margin-top: -50px;
     border-radius: 10px;
     margin-left: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.03); /* Adjust the scale factor to make it smaller */
 }
 
 .box .side-box p {
@@ -662,7 +688,9 @@ footer {
 }
 
 .infoFrame p {
-    text-align: left; 
+    text-align: justify; 
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .goals-frame {
@@ -802,6 +830,11 @@ button:disabled {
 .pdf-thumbnail {
     width: 250px; /* Set the desired width for each thumbnail */
     margin: 30px; /* Adjust margin as needed */
+    transition: transform 0.3s ease-in-out;
+}
+
+.pdf-thumbnail:hover {
+    transform: scale(1.07); /* Adjust the scale factor as needed */
 }
 
 .pdf-thumbnail img {
@@ -870,7 +903,7 @@ display: block;
 .slideshow-container {
     max-width: auto;
     position: relative;
-    margin: auto;
+    margin: 0;
 }
 
 .slide {
