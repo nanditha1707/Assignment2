@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="jsfile/dropdown.js"></script>
-
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+ <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
   <title>Xplore</title>
 </head>
@@ -36,25 +35,22 @@
       </div>
       <img src="logo/search_logo.png" alt="Small Logo" class="small-logo">
     </div>
-  
-
-  <div class="container-wrapper">
-    <a href="game1.html" class="game-page-container">
-      <div>
-        <!-- Content of container 1 goes here -->
-        <h2>Game 1</h2>
-        <p>Click here to go to Page A</p>
-      </div>
-    </a>
-
-    <a href="game2.html" class="game-page-container">
-      <div>
-        <!-- Content of container 2 goes here -->
-        <h2>Game 2</h2>
-        <p>Click here to go to Page B</p>
-      </div>
-    </a>
+ 
   </div>
+
+  <!-- Lottie Animation Container -->
+  <div id="lottie-container"></div>
+  <script src="jsfile/bgXplore.js"></script>
+  
+  <!--game content-->
+  <div id="quiz-container">
+    <div id="question-container" class="question"></div>
+    <div id="options-container" class="options"></div>
+    <div id="result"></div>
+    <!-- Disable the button initially -->
+    <button id="nextButton" onclick="nextQuestion()" disabled>Next Question</button>
+  </div>
+  <script src="jsfile/game1.js"></script>
 
         <!-- Footer -->
       <footer>
