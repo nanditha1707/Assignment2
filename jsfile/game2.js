@@ -1,5 +1,6 @@
+//for the game2 page
 const cardsArray = ['BA', 'DE', 'SOE', 'FMS', 'HS', 'HMS', 'ICT', 'LSCT','BA', 'DE', 'SOE', 'FMS', 'HS', 'HMS', 'ICT', 'LSCT' ];
-    const colors = ['#c54d51', '#7c9857', '#65a7ca', '#943887', '#4e824f', '#e2a856', '#613386', '#d4754f',];
+ const colors = ['#c54d51', '#7c9857', '#65a7ca', '#943887', '#4e824f', '#e2a856', '#613386', '#d4754f',];
 
     let cardsChosen = [];
     let cardsChosenId = [];
