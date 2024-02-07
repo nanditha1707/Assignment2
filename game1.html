@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="jsfile/dropdown.js"></script>
- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-
+  <link rel="stylesheet" href="Normalize.css">
   <title>game1</title>
 </head>
+
 <body>
     <!--first row of navbar with logo-->
     <div class="header">
@@ -31,7 +30,7 @@
                 <a href="brochure.html">School Brochures</a>
             </div>
           </div>
-          <a href="#">Contact Us</a>
+          <a href="#footer">Contact Us</a>
       </div>
     </div>
  
@@ -39,7 +38,6 @@
 
   <!-- Lottie Animation Container -->
   <div id="lottie-container"></div>
-  <script src="jsfile/bgXplore.js"></script>
   
   <!--game content-->
   <div id="quiz-container">
@@ -49,9 +47,9 @@
     <!-- Disable the button initially -->
     <button id="nextButton" onclick="nextQuestion()" disabled>Next Question</button>
   </div>
-  <script src="jsfile/game1.js"></script>
-
-        <!-- Footer -->
+   
+       <!-- Footer -->
+    <section id="footer">
       <footer>
         <div class="contact-info">
           <h3>Contact Us</h3>
@@ -93,7 +91,28 @@
             </form>
         </div>
       </section>
-      <script src="jsfile/footer.js"></script>
+    </section>
+
+      <!-- Game Form Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Enter your name and email</h2>
+      <form id="gameForm" action="game1.html" method="POST">
+        <input type="text" id="name" name="playerName" placeholder="Name" required>
+        <p></p>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <button type="submit">Start Game</button>
+      </form>
+    </div>
+  </div>
+    
+    <!--jsFiles-->
+    <script src="jsfile/footer.js"></script>
+    <script src="jsfile/dropdown.js"></script>
+    <script src="jsfile/bgXplore.js"></script>
+    <script src="jsfile/game1.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 </body>
 </html>
 
