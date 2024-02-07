@@ -727,7 +727,7 @@ footer {
     }
 }
 
-/*for Xplore page*/
+/*for game1 page*/
 #lottie-container {
     position: absolute;
     top: -1;
@@ -804,13 +804,52 @@ button:disabled {
 }
 
 
+/*for game2 page*/
+.game-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+  }
+
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(121, 121, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .message {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; 
+    z-index: 1000; 
+  }
+
+  .show-message {
+    display: block; 
+  }
+
 /* Video */
 .video-container {
     display: flex;
     justify-content: space-around;
     margin: 20px;
-    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-}
+    flex-wrap: wrap; 
+ }
 
 .video {
     text-align: center;
@@ -945,5 +984,43 @@ display: block;
 }
 
 
+/*xplore page*/
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
 
+.game-page-container {
+    width: 40%; /* Set width to 40% of the viewport width */
+    max-width: 300px; /* Limit maximum width */
+    height: 30vh; /* Set height to 30% of the viewport height */
+    background-color: lightblue;
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin: 20px; /* Add margin to create space between the containers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for anchor tags */
+    color: black;
+  }
+
+  .game-page-container:hover {
+    background-color: skyblue;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container-wrapper {
+      flex-direction: column; /* Stack containers vertically on smaller screens */
+    }
+
+    .container {
+      width: 80%; /* Set width to 80% of the viewport width */
+      margin: 10px; /* Reduce margin on smaller screens */
+    }
+  }
 

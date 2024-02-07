@@ -1,4 +1,4 @@
-//for the Xplore page
+//for the game1 page
 const questions = [
     {
       question: 'What is the capital of France?',
@@ -94,6 +94,5 @@ const questions = [
   }
 
   loadQuestion();
-
 
 
