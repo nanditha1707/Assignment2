@@ -146,11 +146,8 @@ body {
     transform: scale(1.03);
   }
 
-<<<<<<< HEAD
+
 .threesmallbox a{
-=======
-  .threesmallbox a {
->>>>>>> 4d7b10cfcfe934c4590fe968e70e28d454c9be69
     text-decoration: none;  
     color: black; /* Set default text color */
     font-family: "Josefin Sans", sans-serif;
