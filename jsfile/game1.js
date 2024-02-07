@@ -7,8 +7,8 @@ const questions = [
     answered: false
   },
   {
-    question: 'How many full time courses does NP have',
-    options: ['37', '41', '32', '45'],
+    question: 'How many full time courses does NP',
+    options: ['Mars', 'Venus', 'Jupiter', 'Saturn'],
     correctAnswer: 'Mars',
     answered: false
   },
@@ -30,80 +30,6 @@ const questions = [
     correctAnswer: '8',
     answered: false
   }
-<<<<<<< HEAD
-
-  function checkAnswer(selectedIndex) {
-    const currentQuestion = questions[currentQuestionIndex];
-
-    if (currentQuestion.options[selectedIndex] === currentQuestion.correctAnswer) {
-      score++;
-    } else {
-      showResult(false);
-      return;
-    }
-
-    showResult(true);
-  }
-
-  function showResult(isCorrect) {
-    const resultContainer = document.getElementById('result');
-    const nextButton = document.getElementById('nextButton');
-
-    if (isCorrect && currentQuestionIndex !== questions.length - 1) {
-      resultContainer.textContent = `Correct! Your current score is ${score}/${5}.`;
-    } else if (isCorrect && currentQuestionIndex === questions.length - 1) {
-      resultContainer.textContent = `Quiz completed! Your final score is ${score}/${questions.length}.`;
-    } else {
-      resultContainer.textContent = `Wrong! Your current score is ${score}/${5}.`;
-    }
-
-    // Disable the button after showing the result
-    nextButton.disabled = true;
-  }
-
-  function nextQuestion() {
-    if (currentQuestionIndex < questions.length - 1) {
-      currentQuestionIndex++;
-      loadQuestion();
-    } else {
-      // Check if all questions have been answered
-    if (currentQuestionIndex === questions.length - 1) {
-      window.location.href = 'results.html'; // Redirect to results.html
-    } else {
-      alert('Quiz completed!');
-    }
-  }
-}
-
-  loadQuestion();
-
-// to handle the game
-// to display player's name
-function displayPlayerName() {
-  const playerName = localStorage.getItem('playerName');
-  document.getElementById('playerName').textContent = playerName;
-}
-
-/*for the game2 page
-const cardsArray = [
-  { type: 'image', content: 'image1.jpg' },
-  { type: 'text', content: 'Text 1' },
-  { type: 'image', content: 'image2.jpg' },
-  { type: 'text', content: 'Text 2' },
-  { type: 'image', content: 'image3.jpg' },
-  { type: 'text', content: 'Text 3' },
-  { type: 'image', content: 'image4.jpg' },
-  { type: 'text', content: 'Text 4' },
-  { type: 'image', content: 'image1.jpg' },
-  { type: 'text', content: 'Text 1' },
-  { type: 'image', content: 'image2.jpg' },
-  { type: 'text', content: 'Text 2' },
-  { type: 'image', content: 'image3.jpg' },
-  { type: 'text', content: 'Text 3' },
-  { type: 'image', content: 'image4.jpg' },
-  { type: 'text', content: 'Text 4' }
-=======
->>>>>>> 4d7b10cfcfe934c4590fe968e70e28d454c9be69
 ];
 
 let currentQuestionIndex = 0;
@@ -162,10 +88,6 @@ if (isCorrect && currentQuestionIndex !== questions.length - 1) {
   resultContainer.textContent = `Wrong! Your current score is ${score}/${10}.`;
 }
 
-<<<<<<< HEAD
-createBoard();
-*/
-=======
 
 nextButton.disabled = true;
 }
@@ -192,4 +114,3 @@ loadQuestion();
 }
 
 initializeQuiz();
->>>>>>> 4d7b10cfcfe934c4590fe968e70e28d454c9be69

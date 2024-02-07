@@ -128,11 +128,8 @@ body {
     transform: scale(1.03);
   }
 
-<<<<<<< HEAD
-.threesmallbox a{
-=======
+
   .threesmallbox a {
->>>>>>> 4d7b10cfcfe934c4590fe968e70e28d454c9be69
     text-decoration: none;  
     color: black; /* Set default text color */
     font-family: "Josefin Sans", sans-serif;
@@ -364,7 +361,7 @@ footer {
 }
 
 .white-curved-rectangle {
-    background-color: rgb(164, 96, 96);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px; 
     padding: 10px;
     position: relative;
@@ -993,9 +990,11 @@ display: block;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center; /* Center align items vertically */
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center; /* Center-align the content */
 }
 
 .game-heading {
@@ -1004,7 +1003,7 @@ display: block;
     margin-bottom: 20px; /* Add some space between the heading and the game containers */
 }
 
-.container-wrapper .game-heading h1{
+.container-wrapper .game-heading h1 {
     font-family: "DM Serif Display", serif;
     font-weight: 600;
     font-style: normal;
@@ -1029,23 +1028,21 @@ display: block;
 }
 
 .game-page-container:hover {
-background-color: rgb(245, 183, 227);
-color: rgb(56, 60, 135);
+    background-color: rgb(245, 183, 227);
+    color: rgb(56, 60, 135);
 }
 
 .dotlottie-player {
-position: absolute; /* Position the animation absolutely within the container wrapper */
+    position: absolute; /* Position the animation absolutely within the container wrapper */
 }
 
 @media screen and (max-width: 768px) {
-.container-wrapper {
-    flex-direction: column; /* Stack containers vertically on smaller screens */
-}
+    .container-wrapper {
+        flex-direction: column; /* Stack containers vertically on smaller screens */
+    }
 
-.container {
-    width: 80%; /* Set width to 80% of the viewport width */
-    margin: 10px; /* Reduce margin on smaller screens */
+    .game-page-container {
+        width: 80%; /* Set width to 80% of the viewport width */
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
 }
-}
-
-
