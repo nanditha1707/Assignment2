@@ -368,7 +368,7 @@ footer {
     top: 50%;
     left: 8px;
     transform: translate(0, -50%); /* Center the element */
-    width: 450px; 
+    width: 545px; 
     height: 30px;
 }
 
@@ -394,6 +394,7 @@ footer {
 .box-container {
     display: flex;
     justify-content: space-around; 
+
 }
 
 .box {
@@ -681,7 +682,6 @@ footer {
     color: white;
 }
 
-
 /* aboutnp pg */
 .infoFrame {
     background-color: #f0f0f0; 
@@ -851,7 +851,7 @@ display: block;
     justify-content: space-around;
     margin: 20px;
     flex-wrap: wrap; 
- }
+}
 
 .video {
     text-align: center;
@@ -863,7 +863,13 @@ display: block;
     .video {
         max-width: 100%; /* Make the video take up the full width on smaller screens */
     }
+
+    .video iframe {
+        width: 100%; /* Make the iframe fill the container width */
+        height: auto; /* Allow the height to adjust proportionally */
+    }
 }
+
 
 
 /* for brouchere page */
