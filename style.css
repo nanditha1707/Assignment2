@@ -3,6 +3,7 @@ body {
     margin: 0;
 }
 
+/* heading and nav bars */
 .header {
     display: flex;
     align-items: center;
@@ -64,6 +65,25 @@ body {
     padding: 50px;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar, .tabs {
+        flex-wrap: wrap;
+    }
+
+    .navbar a, .tabs a {
+        flex: 1;
+        text-align: center;
+        padding: 14px 0;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .small-logo {
+        margin-left: 0;
+    }
+}
 /* Hide all content elements by default */
 .content div {
     display: none;
@@ -107,9 +127,10 @@ body {
     background-color: #f1f1f1; /* Background color for the boxes container */
     margin-top: 0;
     padding: 0;
-}
+    flex-wrap: wrap; 
+  }
 
-.threesmallbox {
+  .threesmallbox {
     flex: 1;
     padding: 150px;
     background-color: white;
@@ -117,44 +138,45 @@ body {
     text-decoration: none; 
     color: black;
     transition: transform 0.3s ease-in-out;
-}
+  }
 
-
-.threesmallbox:hover {
+  .threesmallbox:hover {
     background-color: whitesmoke; 
-    color: white; 
+    color: black; /* Change text color on hover */
     transform: scale(1.03);
-}
+  }
 
+<<<<<<< HEAD
 .threesmallbox a{
+=======
+  .threesmallbox a {
+>>>>>>> 4d7b10cfcfe934c4590fe968e70e28d454c9be69
     text-decoration: none;  
-    color: inherit; 
+    color: black; /* Set default text color */
     font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-}
+  }
 
-.threesmallbox a:hover {
+  .threesmallbox a:hover {
     text-decoration: none;  
-    color: inherit; 
-}
+    color: black; /* Change text color on hover */
+  }
 
-.threesmallbox.student-life-box {
+  .threesmallbox.student-life-box {
     background-size: cover;
     background-image: url('index/StudentLife.png');
-}
+  }
 
-.threesmallbox.courses-box {
+  .threesmallbox.courses-box {
     background-size: cover;
     background-image: url('index/course.png');
-}
+  }
 
-.threesmallbox.industry-box {
+  .threesmallbox.industry-box {
     background-size: cover; 
     background-image: url('index/industry.png');
-}
-
+  }
 
 /* circles - different schools */
 .picture-section {
@@ -235,7 +257,7 @@ footer {
 }
 
 .second-footer {
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     color: white;
     padding: 15px;
     text-align: center;
