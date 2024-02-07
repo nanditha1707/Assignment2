@@ -128,7 +128,11 @@ body {
     transform: scale(1.03);
   }
 
+<<<<<<< HEAD
+.threesmallbox a{
+=======
   .threesmallbox a {
+>>>>>>> 4d7b10cfcfe934c4590fe968e70e28d454c9be69
     text-decoration: none;  
     color: black; /* Set default text color */
     font-family: "Josefin Sans", sans-serif;
@@ -163,11 +167,11 @@ body {
   }
   
 .picture-row {
-margin-top: 20px;
-display: flex;
-justify-content: center;
-margin-bottom: 35px; /* Adjust as needed for spacing between rows */
-transition: transform 0.3s ease-in-out;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px; /* Adjust as needed for spacing between rows */
+    transition: transform 0.3s ease-in-out;
 }
 
 .picture-row a:hover {
@@ -175,15 +179,15 @@ transition: transform 0.3s ease-in-out;
 }
 
 .picture-row a {
-flex: 0 0 15%;
-margin: 0 30px 0 30px;
+    flex: 0 0 15%;
+    margin: 0 30px 0 30px;
 }
 
 .picture-row img {
-width: 150px;
-height: 151px;
-object-fit: fill;
-border-radius: 50%; /* Make the images circular */
+    width: 150px;
+    height: 151px;
+    object-fit: fill;
+    border-radius: 50%; /* Make the images circular */
 }
 
   /* Rectangle below the image row */
@@ -812,37 +816,37 @@ button:disabled {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+}
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    gap: 10px;
-  }
+.grid {
+display: grid;
+grid-template-columns: repeat(4, 100px);
+gap: 10px;
+}
 
-  .card {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(121, 121, 121);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-  }
+.card {
+width: 100px;
+height: 100px;
+background-color: rgb(121, 121, 121);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+cursor: pointer;
+}
 
-  .message {
-    position: absolute;
-    bottom: 20px; 
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px; 
-    z-index: 1000; 
-  }
+.message {
+position: absolute;
+bottom: 20px; 
+left: 50%;
+transform: translateX(-50%);
+font-size: 24px; 
+z-index: 1000; 
+}
 
-  .show-message {
-    display: block; 
-  }
+.show-message {
+display: block; 
+}
 
 /* Video */
 .video-container {
@@ -941,9 +945,6 @@ button:disabled {
 display: block;
 }
 
-
-
-
 /* index page */
 .slideshow-container {
     max-width: auto;
@@ -987,41 +988,64 @@ display: block;
 
 /*xplore page*/
 .container-wrapper {
+    position: relative;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.game-heading {
+    width: 100%; /* Set width to 100% to span the entire container */
+    text-align: center; /* Center-align the heading text */
+    margin-bottom: 20px; /* Add some space between the heading and the game containers */
+}
+
+.container-wrapper .game-heading h1{
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    color: rgb(67, 72, 108);
+}
 
 .game-page-container {
-    width: 40%; /* Set width to 40% of the viewport width */
-    max-width: 300px; /* Limit maximum width */
-    height: 30vh; /* Set height to 30% of the viewport height */
+    width: 40%; 
+    max-width: 280px; 
+    height: 35vh; 
     background-color: lightblue;
-    border: 2px solid blue;
+    border: 3px solid rgb(218, 16, 141);
     border-radius: 10px;
-    margin: 20px; /* Add margin to create space between the containers */
+    margin: 50px; 
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    text-decoration: none; /* Remove underline for anchor tags */
-    color: black;
-  }
+    text-decoration: none; 
+    color: rgb(43, 50, 66);
+}
 
-  .game-page-container:hover {
-    background-color: skyblue;
-  }
+.game-page-container:hover {
+background-color: rgb(245, 183, 227);
+color: rgb(56, 60, 135);
+}
 
-  @media screen and (max-width: 768px) {
-    .container-wrapper {
-      flex-direction: column; /* Stack containers vertically on smaller screens */
-    }
+.dotlottie-player {
+position: absolute; /* Position the animation absolutely within the container wrapper */
+}
 
-    .container {
-      width: 80%; /* Set width to 80% of the viewport width */
-      margin: 10px; /* Reduce margin on smaller screens */
-    }
-  }
+@media screen and (max-width: 768px) {
+.container-wrapper {
+    flex-direction: column; /* Stack containers vertically on smaller screens */
+}
+
+.container {
+    width: 80%; /* Set width to 80% of the viewport width */
+    margin: 10px; /* Reduce margin on smaller screens */
+}
+}
+
 
