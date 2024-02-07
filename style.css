@@ -19,7 +19,7 @@ body {
 
 .navbar {
     display: flex;
-    background-color: #f1f1f1; /* Background color for the first navbar */
+    background-color: #f1f1f1; 
 }
 
 .navbar a {
@@ -47,7 +47,7 @@ body {
 .tabs a {
     color: white;
     text-align: center;
-    padding: 14px 80px;
+    padding: 14px 50px;
     text-decoration: none;
     background-color: black;
 }
@@ -56,10 +56,6 @@ body {
     color: lightblue;
 }
 
-.small-logo {
-    height: 30px; /* Adjust the height */
-    margin-left: 400px; /* Add some spacing between tabs and logo */
-}
 
 .content {
     padding: 50px;
@@ -94,20 +90,6 @@ body {
     display: block;
 }
 
-/* backup for index.html of not expanded img 
-.picture-below-navbar {
-    text-align: center; 
-    margin-top: 20px;   
-    margin-bottom: 20px; 
-}  
-.picture-below-navbar img {
-    max-width: 100%;    
-    height: auto;       
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin-bottom: 100px;
-} 
-*/
 
 .picture-below-navbar1 {
     text-align: center; 
@@ -352,8 +334,9 @@ footer {
 /* ict pg */
 .frame {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center; /* Center the navigation path */
+    
 }
 
 .navigation-path {
@@ -371,20 +354,21 @@ footer {
 
 .colored-rectangle {
     background-color: #4b3f72;
-    height: 70px; /* Adjust the height as needed */
+    height: 70px; 
     border-radius: 10px;
     position: relative;
+    display: flex;
 }
 
 .white-curved-rectangle {
-    background-color: white;
-    border-radius: 10px; /* Adjust the border-radius for curved edges */
+    background-color: rgb(164, 96, 96);
+    border-radius: 10px; 
     padding: 10px;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 8px;
     transform: translate(0, -50%); /* Center the element */
-    width: 550px; 
+    width: 450px; 
     height: 30px;
 }
 
@@ -409,9 +393,7 @@ footer {
 
 .box-container {
     display: flex;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around; 
 }
 
 .box {
@@ -432,6 +414,7 @@ footer {
 .third-frame .box-container {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap; 
 }
 
 .third-frame .box {
