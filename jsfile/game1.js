@@ -115,14 +115,25 @@ const questions = [
       currentQuestionIndex++;
       loadQuestion();
     } else {
+      // Check if all questions have been answered
+    if (currentQuestionIndex === questions.length - 1) {
+      window.location.href = 'results.html'; // Redirect to results.html
+    } else {
       alert('Quiz completed!');
     }
   }
+}
 
   loadQuestion();
 
+// to handle the game
+// to display player's name
+function displayPlayerName() {
+  const playerName = localStorage.getItem('playerName');
+  document.getElementById('playerName').textContent = playerName;
+}
 
-//for the game2 page
+/*for the game2 page
 const cardsArray = [
   { type: 'image', content: 'image1.jpg' },
   { type: 'text', content: 'Text 1' },
@@ -209,3 +220,4 @@ function flipCard() {
 }
 
 createBoard();
+*/

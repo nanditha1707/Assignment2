@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    <div id="playerName"></div>
+    <script>
+        // Retrieve player's name from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const playerName = urlParams.get('playerName');
+        document.getElementById('playerName').textContent = `Player: ${playerName}`;
+    </script>
+    <!-- Display other results here -->
+</body>
+</html>

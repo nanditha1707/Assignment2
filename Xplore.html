@@ -4,13 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="jsfile/dropdown.js"></script>
-<<<<<<< HEAD
-=======
-
->>>>>>> 6afcda690a16122cb6f6a0767046c9a48fb29d3b
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   <title>Xplore</title>
 </head>
 <body>
@@ -42,19 +38,21 @@
   
 
   <div class="container-wrapper">
+    <div class="game-heading">
+      <h1>Our Games</h1>
+    </div>
     <a href="game1.html" class="game-page-container">
       <div>
         <!-- Content of container 1 goes here -->
-        <h2>Game 1</h2>
-        <p>Click here to go to Page A</p>
+        <h2>Answer Qns</h2>
       </div>
     </a>
+    <dotlottie-player src="https://lottie.host/1f563c53-512e-45ee-8443-76d43aae0f7d/GTsNhVBQea.json" background="transparent" speed="1" style="width: 455px; height: 300px;" loop autoplay></dotlottie-player>
 
     <a href="game2.html" class="game-page-container">
       <div>
         <!-- Content of container 2 goes here -->
-        <h2>Game 2</h2>
-        <p>Click here to go to Page B</p>
+        <h2>Matching Game</h2>
       </div>
     </a>
   </div>
@@ -101,7 +99,26 @@
             </form>
         </div>
       </section>
-      <script src="jsfile/footer.js"></script>
+      
+  <!-- Game Form Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Enter your name and email</h2>
+      <form id="gameForm" action="game1.html" method="POST">
+        <input type="text" id="name" name="playerName" placeholder="Name" required>
+        <p></p>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <button type="submit">Start Game</button>
+      </form>
+    </div>
+  </div>
+
+    <!--jsFiles-->
+    <script src="jsfile/form.js"></script>
+    <script src="jsfile/footer.js"></script>
+    <script src="jsfile/dropdown.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </body>
 </html>
 
