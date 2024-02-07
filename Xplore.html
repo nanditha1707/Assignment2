@@ -41,12 +41,12 @@
 
   <div class="container-wrapper">
     <div class="game-heading">
-      <h1>Our Games</h1>
+      <h1>Time to Xplore</h1>
     </div>
     <a href="game1.html" class="game-page-container">
       <div>
         <!-- Content of container 1 goes here -->
-        <h2>Answer Qns</h2>
+        <h2>Know NP well?</h2>
       </div>
     </a>
     <dotlottie-player src="https://lottie.host/1f563c53-512e-45ee-8443-76d43aae0f7d/GTsNhVBQea.json" background="transparent" speed="1" style="width: 455px; height: 300px;" loop autoplay></dotlottie-player>
@@ -54,7 +54,7 @@
     <a href="game2.html" class="game-page-container">
       <div>
         <!-- Content of container 2 goes here -->
-        <h2>Matching Game</h2>
+        <h2>What does NP offer?</h2>
       </div>
     </a>
   </div>
@@ -94,33 +94,33 @@
             <h2>Subscribe to Our Newsletter</h2>
             <p>Interested to know more about NP? Get the latest updates via our newsletter</p>
             <form>
-                <p><label for="email">Email:</label></p>
-                <input type="email" id="email" name="email" required>
-                <p><label for="password">Password:</label></p>
-                <input type="password" id="password" name="password" required>
+                <p><label for="newsletter-email">Email:</label></p>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <p><label for="newsletter-password">Password:</label></p>
+                <input type="password" id="newsletter-password" name="newsletter-password" required>
                 <button type="button" onclick="submitForm()">Subscribe Now</button>
             </form>
         </div>
-      </section>
     </section>
-
-      <!-- Game Form Modal -->
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Enter your name and email</h2>
-      <form id="gameForm" action="game1.html" method="POST">
-        <input type="text" id="name" name="playerName" placeholder="Name" required>
-        <p></p>
-        <input type="email" id="email" name="email" placeholder="Email" required>
-        <button type="submit">Start Game</button>
-      </form>
+  </section>
+    
+    <!-- Game Form Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enter your name and email</h2>
+            <form id="gameForm" action="game1.html" method="POST">
+                <input type="text" id="game-name" name="playerName" placeholder="Name" required>
+                <input type="email" id="game-email" name="game-email" placeholder="Email" required>
+                <button type="submit">Start Game</button>
+            </form>
+        </div>
     </div>
-  </div>
     
     <!--jsFiles-->
     <script src="jsfile/form.js"></script>
     <script src="jsfile/footer.js"></script>
+    <script src="jsfile/game2.js"></script>
     <script src="jsfile/dropdown.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </body>

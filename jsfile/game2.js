@@ -9,14 +9,14 @@ const cardsArray = ['BA', 'DE', 'SOE', 'FMS', 'HS', 'HMS', 'ICT', 'LSCT','BA', '
 
     // Map to hold custom messages for each card
     const cardMessages = {
-      'BA': 'You matched A!',
-      'DE': 'Wooow! You are B!',
-      'SOE': 'Great job! You found C!',
-      'FMS': 'Awesome! D is matched!',
-      'HS': 'E is yours! Great match!',
-      'HMS': 'F match! Fantastic!',
-      'ICT': 'G is found! Good work!',
-      'LSCT': 'You got H! Well done!'
+      'BA': 'NP school of BA where some of the most sought-after business courses are housed!',
+      'DE': 'NP school of DE where you’ll learn how to use human-centred design methodology and smart technologies!',
+      'SOE': 'NP school of SOE where you get to strengthening your ties with the industry and push the frontiers of robotics research!',
+      'FMS': 'Np school of FMS where you will get trained to be a next-gen multiplatform media professional!',
+      'HS': 'NP school of HS where you can learn in acute and community based settings, and be equipped with clinical skills!',
+      'HMS': 'NP school of HMS where you will learn to reach out to others, inspire them, and enrich their lives!',
+      'ICT': 'NP school of ICT where you get to design unforgettable virtual experiences and build an AI startup!',
+      'LSCT': 'NP school of LSCT where you get equipped with multidisciplinary skill sets to solve real-world problems!'
     };
 
     function createBoard() {
@@ -53,9 +53,7 @@ const cardsArray = ['BA', 'DE', 'SOE', 'FMS', 'HS', 'HMS', 'ICT', 'LSCT','BA', '
       }
       cardsChosen = [];
       cardsChosenId = [];
-      if (cardsWon.length === cardsArray.length / 2) {
-        showMessage('Congratulations! You found all matches!');
-      }
+      
     }
 
     function flipCard() {
