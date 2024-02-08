@@ -90,10 +90,16 @@ const questions = [
       currentQuestionIndex++;
       loadQuestion();
     } else {
-      alert('Quiz completed!');
-    }
+  // Check if all questions have been answered
+  if (currentQuestionIndex === questions.length - 1) {
+    window.location.href = 'results.html'; // Redirect to results.html
+  } else {
+    alert('Quiz completed!');
   }
+}
+}    
 
-  loadQuestion();
+ loadQuestion();
+
 
 
