@@ -9,7 +9,7 @@ As a student who was previously finding out about suitable courses in Ngee Ann P
 - We made references to Ngee Ann Poly's Official Website as our website is based on creating a small branch of NP web to allow potential students get to know more about NP.
 - all the images in index.html is taken ourselves at school.
 - Github page link: https://github.com/nanditha1707/Assignment2/deployments/github-pages
-- video link:
+- video link: Assignment2\website walkthrough.mp4 or https://github.com/nanditha1707/Assignment2/blob/d23e0379f3748f3c2cd361e4d42ccd10a20bdb1b/website%20walkthrough.mp4
 
 ## Features
 #### Home Page (index.html): 
