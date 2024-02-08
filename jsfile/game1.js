@@ -69,21 +69,24 @@ const questions = [
     showResult(true);
   }
 
+
   function showResult(isCorrect) {
     const resultContainer = document.getElementById('result');
     const nextButton = document.getElementById('nextButton');
-
+  
     if (isCorrect && currentQuestionIndex !== questions.length - 1) {
       resultContainer.textContent = `Correct! Your current score is ${score}/${5}.`;
     } else if (isCorrect && currentQuestionIndex === questions.length - 1) {
       resultContainer.textContent = `Quiz completed! Your final score is ${score}/${questions.length}.`;
+      // Post the final score to the API when the quiz is completed
+      postScoreToAPI(score);
     } else {
       resultContainer.textContent = `Wrong! Your current score is ${score}/${5}.`;
     }
-
+  
     // Disable the button after showing the result
     nextButton.disabled = true;
-  }
+  }  
 
   function nextQuestion() {
     if (currentQuestionIndex < questions.length - 1) {
@@ -101,5 +104,35 @@ const questions = [
 
  loadQuestion();
 
-
-
+   function postScoreToAPI(score) {
+    const url = 'https://assignment2-3f92.restdb.io/rest/gameapi';
+    const apiKey = '65c35861c34784038c187758';
+    const postData = {
+      name: 'Name', 
+      email: 'example@example.com', 
+      score: score
+    };
+  
+    const headers = {
+      'Content-Type': 'application/json',
+      'x-apikey': apiKey
+    };
+  
+    fetch(url, {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(postData),
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to post score to the API');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Score posted successfully:', data);
+      })
+      .catch(error => {
+        console.error('Error posting score to the API:', error);
+      });
+  }

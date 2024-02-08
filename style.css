@@ -632,7 +632,11 @@ footer {
     text-align: center;
     width: 40px; 
     height: 20px;
+<<<<<<< HEAD
+    background-color: #00853f; /*Adjust the background color of the side box */
+=======
     background-color: #00853f; 
+>>>>>>> ffb8294be2653a2bb1cd05cb64eaa68686e28989
     padding: 7px;
     margin-top: -50px;
     border-radius: 10px;
@@ -1099,7 +1103,7 @@ display: block;
     align-items: center;
     cursor: pointer;
     text-decoration: none; 
-    color: rgb(43, 50, 66);
+    color: rgb(160, 8, 87);
 }
 
 .game-page-container:hover {
@@ -1119,5 +1123,79 @@ display: block;
     .game-page-container {
         width: 80%;
         margin: 10px; 
+    }
+}
+
+/* results page */
+.title h1{
+    margin-top: 20px;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 44px;
+    padding: 2px;
+    color: rgb(43, 50, 66);
+}
+
+/* Table Styles */
+#results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#results-table th,
+#results-table td {
+    padding: 10px;
+    border: 1px solid #97c6fc;
+    text-align: left;
+}
+
+#results-table th {
+    background-color: #d1e0ea; 
+    color: #283e85; 
+}
+
+#results-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#results-table tbody tr:hover {
+    background-color: #e9e9e9;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+    #results-table {
+        width: 100%;
+    }
+
+    #results-table thead {
+        display: none;
+    }
+
+    #results-table tbody, #results-table tr, #results-table td {
+        display: block;
+        width: 100%;
+    }
+
+    #results-table td {
+        text-align: left;
+        border: none;
+        padding: 8px;
+        margin-bottom: 5px;
+    }
+
+    #results-table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #results-table tbody tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    #results-table tbody tr:hover {
+        background-color: #e9e9e9;
     }
 }
