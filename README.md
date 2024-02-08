@@ -10,6 +10,10 @@ As a student who was previously finding out about suitable courses in Ngee Ann P
 - all the images in index.html is taken ourselves at school.
 - Github page link: https://github.com/nanditha1707/Assignment2/deployments/github-pages
 - video link: Assignment2\FED_XploreNP_pitch.mp4 or https://github.com/nanditha1707/Assignment2/blob/2e37878cf0a5603c54bcb681fb043b8339026399/FED_XploreNP_pitch.mp4
+- contributions: 
+- Nanditha - game and (js)
+- Yu Lin - api and lottie(js)
+- We did the css and html together
 
 ## Features
 #### Home Page (index.html): 
