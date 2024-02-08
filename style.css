@@ -3,6 +3,7 @@ body {
     margin: 0;
 }
 
+
 /* heading and nav bars */
 .header {
     display: flex;
@@ -37,11 +38,13 @@ body {
 .second-navbar {
     display: flex;
     align-items: center;
-    background-color: black; /* Background color for the second navbar */
+    background-color: black;
+    flex-wrap: nowrap; 
 }
 
 .tabs {
     display: flex;
+    flex-wrap: nowrap; 
 }
 
 .tabs a {
@@ -80,16 +83,15 @@ body {
         margin-left: 0;
     }
 }
-/* Hide all content elements by default */
+
 .content div {
     display: none;
 }
 
-/* Show the selected content element */
+
 :target {
     display: block;
 }
-
 
 .picture-below-navbar1 {
     text-align: center; 
@@ -101,12 +103,12 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* for index bottom 3 */
 
+/* for index bottom 3 */
 .threeboxes {
     display: flex;
     justify-content: space-around;
-    background-color: #f1f1f1; /* Background color for the boxes container */
+    background-color: #f1f1f1; 
     margin-top: 0;
     padding: 0;
     flex-wrap: wrap; 
@@ -124,14 +126,13 @@ body {
 
   .threesmallbox:hover {
     background-color: whitesmoke; 
-    color: black; /* Change text color on hover */
+    color: black; 
     transform: scale(1.03);
   }
 
-
 .threesmallbox a{
     text-decoration: none;  
-    color: black; /* Set default text color */
+    color: black; 
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -139,7 +140,7 @@ body {
 
   .threesmallbox a:hover {
     text-decoration: none;  
-    color: black; /* Change text color on hover */
+    color: black; 
   }
 
   .threesmallbox.student-life-box {
@@ -160,19 +161,19 @@ body {
 /* circles - different schools */
 .picture-section {
     background-color: rgb(52, 50, 60);
-    padding: 40px; /* Adjust as needed for spacing */
+    padding: 40px; 
   }
   
 .picture-row {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    margin-bottom: 35px; /* Adjust as needed for spacing between rows */
+    margin-bottom: 35px; 
     transition: transform 0.3s ease-in-out;
 }
 
 .picture-row a:hover {
-    transform: scale(1.04); /* Adjust the scale factor to make it smaller */
+    transform: scale(1.04); 
 }
 
 .picture-row a {
@@ -184,7 +185,7 @@ body {
     width: 150px;
     height: 151px;
     object-fit: fill;
-    border-radius: 50%; /* Make the images circular */
+    border-radius: 50%;
 }
 
   /* Rectangle below the image row */
@@ -198,17 +199,18 @@ body {
 }
   
 .unsure-rectangle p {
-    color: black; /* Set the text color to white or your preferred color */
-    font-size: 18px; /* Adjust the font size as needed */
-    margin: 0; /* Remove default margin */
+    color: black; 
+    font-size: 18px;
+    margin: 0; 
 }
 
 .rectangle-link {
-    display: block; /* Make the anchor a block-level element to fill the width of its container */
-    text-decoration: none; /* Remove underline from the link, if desired */
+    display: block; 
+    text-decoration: none; 
   }
 
-/* Additional styles for the footer */
+
+/*  footer */
 footer {
     background-color: black;
     padding: 20px;
@@ -246,7 +248,6 @@ footer {
     margin: 0; 
 }
 
-/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     footer {
         flex-direction: column;
@@ -257,8 +258,8 @@ footer {
     .quick-links,
     .connect-with-us {
         max-width: 100%;
-        text-align: center; /* Center text within each column */
-        margin-bottom: 15px; /* Add space between columns */
+        text-align: center; 
+        margin-bottom: 15px; 
     }
 }
 
@@ -279,13 +280,14 @@ footer {
     background-color: rgb(255, 255, 255);
     margin: 15% auto;
     padding: 20px;
-    width: 25%;
+    max-width: 50%; 
+    width: 25%; 
     border-radius: 10px;
-    display: flex; /* Use flex container */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: space-between; /* Distribute space between children */
-    align-items: center; /* Center children horizontally */
-    position: relative; /* Position relative for absolute positioning */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
     margin-bottom: 10px;
 }
 
@@ -311,8 +313,8 @@ footer {
 }
 
 .modal-content form {
-    width: 100%; /* Full width */
-    text-align: center; /* Center form elements */
+    width: 100%;
+    text-align: center;
 }
 
 .modal-content form button {
@@ -320,8 +322,8 @@ footer {
 }
 
 .modal-content form input {
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Include padding and border in width calculation */
+    width: 100%;
+    box-sizing: border-box;
     border-radius: 10px;
     padding: 10px;
     overflow: none;
@@ -331,11 +333,19 @@ footer {
     font-size: 18px;
 }
 
-/* ict pg */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        max-width: 80%; 
+    }
+}
+
+
+/* course pg */
 .frame {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
-    text-align: center; /* Center the navigation path */
+    text-align: center; 
+    justify-content: flex-start;
     
 }
 
@@ -347,9 +357,9 @@ footer {
 
 .navigation-path a {
     text-decoration: none;
-    color: black; /* Set the color you prefer for the links */
+    color: black; 
     font-weight: bold; 
-    margin: 10px; /* Add some spacing between links */
+    margin: 10px; 
 }
 
 .colored-rectangle {
@@ -367,40 +377,46 @@ footer {
     position: relative;
     top: 50%;
     left: 8px;
-    transform: translate(0, -50%); /* Center the element */
+    transform: translate(0, -50%); 
     width: 545px; 
     height: 30px;
+    display: flex;
 }
 
 .white-curved-rectangle p {
     margin: 0;
     text-align: left;
     font-weight: bold;
-    color: black; /* color for the text */
+    color: black; 
     position: relative;
     top: 5px; 
 }
 
-.second-frame {
+.box {
+    width: 30%;
+    height: 350px;
+    background-color: white; 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px 10px;
+}
+
+.second-frame  {
     background-color: white;
     padding: 20px;
-    margin-top: 20px; /* top margin to create space between frames */
-    margin-bottom: 10px;
+}
+
+.second-frame .box-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start; 
     flex-wrap: wrap;
 }
 
-.box-container {
-    display: flex;
-    justify-content: space-around; 
-
-}
-
-.box {
-    width: 30%; /* Adjust the width of each box */
+.second-frame .box{
+    width: 30%;
     height: 350px;
-    background-color: white; /* background color of each box */
+    background-color: white;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -436,6 +452,7 @@ footer {
 .fourth-frame .box-container {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap; 
 }
 
 .fourth-frame .box {
@@ -462,15 +479,37 @@ footer {
 }
 
 .box p {
-    text-align: left; /* Center the text */
-    margin-top: 10px; /* Add space between the inner box and the text */
-    color: black; /* text color */
+    text-align: left; 
+    margin-top: 10px; 
+    color: black;
     font-weight: bold;
     padding-left: 10px;
     line-height: 1.5;
     font-size: 18px;
 }
 
+.box:hover {
+    transform: scale(1.03); 
+}
+
+@media screen and (max-width: 768px) {
+    .second-frame .box {
+      width: 100%; 
+      margin: 20px ; 
+    }
+
+    .third-frame .box {
+        width: 100%; 
+        margin: 20px ; 
+    }
+
+    .fourth-frame .box {
+        width: 100%;
+        margin: 20px
+      }
+  }
+
+/* ict pg */
 .box .side-box {
     display: flex;
     align-items: center;
@@ -485,14 +524,10 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
-.box:hover {
-    transform: scale(1.03); /* Adjust the scale factor to make it smaller */
-}
-
 .box .side-box p {
-    margin: 0; /* Remove default margin for the paragraph */
-    line-height: 1; /* Adjust line-height to center vertically */
-    color: #fff; /* Set the text color */
+    margin: 0; 
+    line-height: 1; 
+    color: #fff; 
     font-weight: bold;
     margin-left: -5px;
 }
@@ -512,9 +547,8 @@ footer {
 }
 
 .box .side-box2 p {
-    margin: 0; /* Remove default margin for the paragraph */
-    line-height: 1; /* Adjust line-height to center vertically */
-    color: #fff; 
+    margin: 0; 
+    line-height: 1; 
     font-weight: bold;
     margin-left: -5px;
 }
@@ -524,9 +558,9 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 40px; /* Adjust the width of the side box as needed */
+    width: 40px; 
     height: 20px;
-    background-color: #6e9a43; /* Adjust the background color of the side box */
+    background-color: #6e9a43; 
     padding: 7px;
     margin-top: -50px;
     border-radius: 10px;
@@ -534,8 +568,8 @@ footer {
 }
 
 .box .side-box3 p {
-    margin: 0; /* Remove default margin for the paragraph */
-    line-height: 1; /* Adjust line-height to center vertically */
+    margin: 0; 
+    line-height: 1; 
     color: #fff;
     font-weight: bold;
     margin-left: -5px;
@@ -546,9 +580,9 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 40px; /* Adjust the width of the side box as needed */
+    width: 40px; 
     height: 20px;
-    background-color: #00acd3; /* Adjust the background color of the side box */
+    background-color: #00acd3; 
     padding: 7px;
     margin-top: -50px;
     border-radius: 10px;
@@ -556,8 +590,8 @@ footer {
 }
 
 .box .side-box4 p {
-    margin: 0; /* Remove default margin for the paragraph */
-    line-height: 1; /* Adjust line-height to center vertically */
+    margin: 0; 
+    line-height: 1; 
     color: #fff;
     font-weight: bold;
     margin-left: -5px;
@@ -568,9 +602,9 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 40px; /* Adjust the width of the side box as needed */
+    width: 40px;
     height: 20px;
-    background-color: #ad208e; /* Adjust the background color of the side box */
+    background-color: #ad208e; 
     padding: 7px;
     margin-top: -50px;
     border-radius: 10px;
@@ -578,8 +612,8 @@ footer {
 }
 
 .box .side-box5 p {
-    margin: 0; /* Remove default margin for the paragraph */
-    line-height: 1; /* Adjust line-height to center vertically */
+    margin: 0; 
+    line-height: 1; 
     color: #fff;
     font-weight: bold;
     margin-left: -5px;
@@ -590,9 +624,13 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 40px; /* Adjust the width of the side box as needed */
+    width: 40px; 
     height: 20px;
+<<<<<<< HEAD
     background-color: #00853f; /*Adjust the background color of the side box */
+=======
+    background-color: #00853f; 
+>>>>>>> c272fad432e254f458acc326901b69740bbe6c29
     padding: 7px;
     margin-top: -50px;
     border-radius: 10px;
@@ -600,8 +638,8 @@ footer {
 }
 
 .box .side-box6 p {
-    margin: 0; /* Remove default margin for the paragraph */
-    line-height: 1; /* Adjust line-height to center vertically */
+    margin: 0; 
+    line-height: 1; 
     color: #fff;
     font-weight: bold;
     margin-left: -5px;
@@ -612,9 +650,9 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 40px; /* Adjust the width of the side box as needed */
+    width: 40px; 
     height: 20px;
-    background-color: #f99f20; /* Adjust the background color of the side box */
+    background-color: #f99f20; 
     padding: 7px;
     margin-top: -50px;
     border-radius: 10px;
@@ -622,8 +660,8 @@ footer {
 }
 
 .box .side-box7 p {
-    margin: 0; /* Remove default margin for the paragraph */
-    line-height: 1; /* Adjust line-height to center vertically */
+    margin: 0; 
+    line-height: 1; 
     color: #fff;
     font-weight: bold;
     margin-left: -5px;
@@ -634,9 +672,9 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 40px; /* Adjust the width of the side box as needed */
+    width: 40px; 
     height: 20px;
-    background-color: #f26531; /* Adjust the background color of the side box */
+    background-color: #f26531; 
     padding: 7px;
     margin-top: -50px;
     border-radius: 10px;
@@ -644,8 +682,8 @@ footer {
 }
 
 .box .side-box8 p {
-    margin: 0; /* Remove default margin for the paragraph */
-    line-height: 1; /* Adjust line-height to center vertically */
+    margin: 0; 
+    line-height: 1; 
     color: #fff;
     font-weight: bold;
     margin-left: -5px;
@@ -659,7 +697,7 @@ footer {
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
-    border-radius: 5px; /* Adjust the value as needed */
+    border-radius: 5px; 
     overflow: hidden;
     border-color: 2px solid black;
 }
@@ -682,11 +720,12 @@ footer {
     color: white;
 }
 
+
 /* aboutnp pg */
 .infoFrame {
     background-color: #f0f0f0; 
     border: 1px solid #ddd;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -721,7 +760,6 @@ footer {
     font-style: normal;
 }
 
-/* Media Query for smaller screens */
 @media (max-width: 768px) {
     .goal-box {
         width: 100%;
@@ -729,18 +767,19 @@ footer {
     }
 }
 
+
 /*for game1 page*/
 #lottie-container {
     position: absolute;
     top: -1;
     left: 0;
-    width: 100vw; /* Use viewport width for 100% width */
-    height: 100vh; /* Use viewport height for 100% height */
+    width: 100vw; 
+    height: 100vh;
     z-index: -1;
 }
 
 #quiz-container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
@@ -779,7 +818,7 @@ footer {
 #result {
     font-size: 20px;
     margin-top: 20px;
-    margin-bottom: 10px; /* Add margin-bottom */
+    margin-bottom: 10px;
     color: #333;
 }
 
@@ -799,14 +838,21 @@ button:hover {
     color: lightblue;
 }
 
-/* Add a class to style a disabled button */
 button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
 
 
+@media screen and (max-width: 768px) {
+    #quiz-container {
+        max-width: 70%; 
+    }
+}
+
+
 /*for game2 page*/
+
 .game-container {
     position: relative;
     display: flex;
@@ -815,16 +861,24 @@ button:disabled {
     height: 100vh;
 }
 
+.match-schools {
+    text-align: center;
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    font-weight: bold; 
+  }
+
 .grid {
 display: grid;
 grid-template-columns: repeat(4, 100px);
 gap: 10px;
+
 }
 
 .card {
 width: 100px;
 height: 100px;
-background-color: rgb(121, 121, 121);
+background-color: rgb(175, 160, 229);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -833,18 +887,27 @@ cursor: pointer;
 }
 
 .message {
-position: absolute;
-bottom: 20px; 
-left: 50%;
-transform: translateX(-50%);
-font-size: 24px; 
-z-index: 1000; 
-}
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    z-index: 1000;
+    background-color: rgba(255, 207, 207, 0.758); /* Background color */
+    width: 90%; 
+    max-width: 400px; 
+    padding: 10px;
+    text-align: center;
+    display: inline; 
+    border-radius: 20px;
+    justify-content: center;
+  }
 
-.show-message {
-display: block; 
-}
 
+  .show-message {
+    display: block; /* Show the message */
+  }
+  
 /* Video */
 .video-container {
     display: flex;
@@ -858,18 +921,16 @@ display: block;
     max-width: 50%;
 }
 
-/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .video {
-        max-width: 100%; /* Make the video take up the full width on smaller screens */
+        max-width: 100%;
     }
 
     .video iframe {
-        width: 100%; /* Make the iframe fill the container width */
-        height: auto; /* Allow the height to adjust proportionally */
+        width: 100%; 
+        height: auto;
     }
 }
-
 
 
 /* for brouchere page */
@@ -880,13 +941,13 @@ display: block;
 }
 
 .pdf-thumbnail {
-    width: 250px; /* Set the desired width for each thumbnail */
-    margin: 30px; /* Adjust margin as needed */
+    width: 250px;
+    margin: 30px; 
     transition: transform 0.3s ease-in-out;
 }
 
 .pdf-thumbnail:hover {
-    transform: scale(1.07); /* Adjust the scale factor as needed */
+    transform: scale(1.07); 
 }
 
 .pdf-thumbnail img {
@@ -943,10 +1004,10 @@ display: block;
     color: lightblue;
 }
 
-
 .show {
 display: block;
 }
+
 
 /* index page */
 .slideshow-container {
@@ -962,8 +1023,8 @@ display: block;
 
 .slideshow-container img {
     width: 100%;
-    height: 450px; /* Set a fixed height for all images */
-    object-fit: cover; /* Ensure the image covers the fixed height */
+    height: 450px; 
+    object-fit: cover;
 }
 
 .dot-container {
@@ -996,17 +1057,17 @@ display: block;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; /* Center align items vertically */
+    align-items: center; 
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
-    text-align: center; /* Center-align the content */
+    text-align: center; 
 }
 
 .game-heading {
-    width: 100%; /* Set width to 100% to span the entire container */
-    text-align: center; /* Center-align the heading text */
-    margin-bottom: 20px; /* Add some space between the heading and the game containers */
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 .container-wrapper .game-heading h1 {
@@ -1022,7 +1083,6 @@ display: block;
     max-width: 280px; 
     height: 35vh; 
     background-color: lightblue;
-    border: 3px solid rgb(218, 16, 141);
     border-radius: 10px;
     margin: 50px; 
     display: flex;
@@ -1039,16 +1099,16 @@ display: block;
 }
 
 .dotlottie-player {
-    position: absolute; /* Position the animation absolutely within the container wrapper */
+    position: absolute;
 }
 
 @media screen and (max-width: 768px) {
     .container-wrapper {
-        flex-direction: column; /* Stack containers vertically on smaller screens */
+        flex-direction: column; 
     }
 
     .game-page-container {
-        width: 80%; /* Set width to 80% of the viewport width */
-        margin: 10px; /* Reduce margin on smaller screens */
+        width: 80%;
+        margin: 10px; 
     }
 }

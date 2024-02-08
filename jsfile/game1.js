@@ -1,44 +1,19 @@
 //for the game1 page
 const questions = [
     {
-      question: 'What is the capital of France?',
-      options: ['Berlin', 'Paris', 'Madrid', 'Rome'],
-      correctAnswer: 'Paris'
+      question: 'How many canteens are there in NP',
+      options: ['2', '1', '3', '4'],
+      correctAnswer: '3'
     },
     {
-      question: 'Which planet is known as the Red Planet?',
-      options: ['Mars', 'Venus', 'Jupiter', 'Saturn'],
-      correctAnswer: 'Mars'
+      question: 'How many full time courses does NP have?',
+      options: ['35', '41', '39', '45'],
+      correctAnswer: '41'
     },
     {
-      question: 'What is the largest mammal in the world?',
-      options: ['Elephant', 'Giraffe', 'Blue Whale', 'Hippopotamus'],
-      correctAnswer: 'Blue Whale'
-    },
-    {
-      question: 'Which year did NP open their doors?',
-      options: ['1963', '1967', '1961', '1965'],
-      correctAnswer: '1963'
-    },
-    {
-      question: 'How many Schools does NP have?',
-      options: ['10', '6', '8', '9'],
-      correctAnswer: '8'
-    },
-    {
-      question: 'What is the capital of France?',
-      options: ['Berlin', 'Paris', 'Madrid', 'Rome'],
-      correctAnswer: 'Paris'
-    },
-    {
-      question: 'Which planet is known as the Red Planet?',
-      options: ['Mars', 'Venus', 'Jupiter', 'Saturn'],
-      correctAnswer: 'Mars'
-    },
-    {
-      question: 'What is the largest mammal in the world?',
-      options: ['Elephant', 'Giraffe', 'Blue Whale', 'Hippopotamus'],
-      correctAnswer: 'Blue Whale'
+      question: 'Out of the 5 Polytechnics which order place was NP built',
+      options: ['1st', '2nd', '3rd', '4th'],
+      correctAnswer: '2nd'
     },
     {
       question: 'Which year did NP open their doors?',
