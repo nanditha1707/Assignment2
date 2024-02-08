@@ -102,9 +102,9 @@ const questions = [
 }
 }    
 
- loadQuestion();
+loadQuestion();
 
-   function postScoreToAPI(score) {
+  /*  function postScoreToAPI(score) {
     const url = 'https://assignment2-3f92.restdb.io/rest/gameapi';
     const apiKey = '65c35861c34784038c187758';
     const postData = {
@@ -135,4 +135,4 @@ const questions = [
       .catch(error => {
         console.error('Error posting score to the API:', error);
       });
-  }
+  }*/
