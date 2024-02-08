@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 //for the game1 page
 const questions = [
     {
@@ -117,11 +115,16 @@ const questions = [
       currentQuestionIndex++;
       loadQuestion();
     } else {
-      alert('Quiz completed!');
-    }
+  // Check if all questions have been answered
+  if (currentQuestionIndex === questions.length - 1) {
+    window.location.href = 'results.html'; // Redirect to results.html
+  } else {
+    alert('Quiz completed!');
   }
+}
+}    
 
-  loadQuestion();
+ loadQuestion();
 
 
->>>>>>> 17fc3696b619fe56a0085e924550576938275247
+
