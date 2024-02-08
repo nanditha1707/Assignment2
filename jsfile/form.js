@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Form submission
     var gameForm = document.getElementById('gameForm');
     if (gameForm) {
-        gameForm.addEventListener('click', function (e) {
+        gameForm.addEventListener('submit', function (e) { // Change 'click' to 'submit'
             e.preventDefault(); // Prevent default form submission
 
             let name = document.getElementById("name").value;
