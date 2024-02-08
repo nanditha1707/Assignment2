@@ -40,11 +40,13 @@ body {
     align-items: center;
     background-color: black;
     flex-wrap: nowrap; 
+    left: 8px;
 }
 
 .tabs {
     display: flex;
     flex-wrap: nowrap; 
+    left: 8px;
 }
 
 .tabs a {
@@ -53,6 +55,8 @@ body {
     padding: 14px 50px;
     text-decoration: none;
     background-color: black;
+    white-space: nowrap; 
+    left: 8px;
 }
 
 .tabs a:hover {
@@ -67,12 +71,14 @@ body {
 @media screen and (max-width: 768px) {
     .navbar, .tabs {
         flex-wrap: wrap;
+        left: 8px;
     }
 
     .navbar a, .tabs a {
         flex: 1;
         text-align: center;
         padding: 14px 0;
+        left: 8px;
     }
 
     .logo {
@@ -626,7 +632,11 @@ footer {
     text-align: center;
     width: 40px; 
     height: 20px;
+<<<<<<< HEAD
     background-color: #00853f; /*Adjust the background color of the side box */
+=======
+    background-color: #00853f; 
+>>>>>>> ffb8294be2653a2bb1cd05cb64eaa68686e28989
     padding: 7px;
     margin-top: -50px;
     border-radius: 10px;
@@ -767,24 +777,31 @@ footer {
 /*for game1 page*/
 #lottie-container {
     position: absolute;
-    top: -1;
-    left: 0;
-    width: 100vw; 
-    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjusted width */
+    max-width: 800px; /* Added max-width */
+    height: 80vh; /* Adjusted height */
     z-index: -1;
+    margin-top: 10%; /* Adjusted margin */
+    margin-bottom: 10%; /* Adjusted margin */
 }
 
 #quiz-container {
-    max-width: 500px;
-    margin: 0 auto;
+    position: relative;
+    width: 90%; /* Adjusted width */
+    max-width: 500px; /* Added max-width */
+    margin: auto;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 200px; 
-    margin-bottom: 200px;
+    margin-top: 10%; /* Adjusted margin */
+    margin-bottom: 10%; /* Adjusted margin */
 }
+
 
 .question {
     font-size: 22px;
