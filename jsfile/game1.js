@@ -81,7 +81,7 @@ const questions = [
       resultContainer.textContent = `Quiz completed! Your final score is ${score}/${questions.length}.`;
     } else {
       resultContainer.textContent = `Wrong! Your current score is ${score}/${5}.`;
-    }
+    } 
   
     // Disable the button after showing the result
     nextButton.disabled = true;

@@ -64,7 +64,7 @@ const cardsArray = ['BA', 'DE', 'SOE', 'FMS', 'HS', 'HMS', 'ICT', 'LSCT','BA', '
       if (cardsChosen.length === 2) {
         setTimeout(checkForMatch, 500);
       }
-    }
+    } 
 
     // Function to display message on the page
     function showMessage(message) {
@@ -74,7 +74,7 @@ const cardsArray = ['BA', 'DE', 'SOE', 'FMS', 'HS', 'HMS', 'ICT', 'LSCT','BA', '
       // Hide the message after a short delay
       setTimeout(() => {
         messageContainer.classList.remove('show-message');
-      }, 2000); // 2000 milliseconds = 2 seconds
+      }, 2000); // = 2 seconds
     }
 
     createBoard();
