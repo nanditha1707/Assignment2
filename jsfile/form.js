@@ -1,22 +1,29 @@
+var modal = document.getElementById("myModal");
+
+// When the user clicks on "Play Game 1", open the modal
+document.querySelector('.game-page-container').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent default behavior of the link
+  modal.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+document.getElementsByClassName("close")[0].onclick = function() {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
 document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById('myModal');
-    const span = document.querySelector(".close");
-
-    // When the user clicks on <span> (x), close the modal
-    span.addEventListener('click', function() {
-        modal.style.display = "none";
-    });
-
-    // When the user clicks on "Play Game 1", open the modal
-    document.querySelector('.game-page-container').addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default behavior of the link
-        modal.style.display = "block";
-    });
-
+    const APIKEY = "65c35861c34784038c187758";
     // Form submission
     var gameForm = document.getElementById('gameForm');
     if (gameForm) {
-        gameForm.addEventListener('submit', function (e) {
+        gameForm.addEventListener('click', function (e) {
             e.preventDefault(); // Prevent default form submission
 
             let name = document.getElementById("name").value;
