@@ -9,7 +9,7 @@ setInterval(function () {
     }
     showSlides(slideIndex);
 }, 5000);
-
+ 
 function showSlides(n) {
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("dot");

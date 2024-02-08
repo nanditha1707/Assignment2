@@ -1,22 +1,25 @@
 var modal = document.getElementById("myModal");
 
-// When the user clicks on "Play Game 1", open the modal
+// Open the modal when the user clicks on "Play Game 1"
 document.querySelector('.game-page-container').addEventListener('click', function(e) {
   e.preventDefault(); // Prevent default behavior of the link
   modal.style.display = "block";
 });
 
-// When the user clicks on <span> (x), close the modal
+// Close the modal when the user clicks on the close button
 document.getElementsByClassName("close")[0].onclick = function() {
   modal.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the modal, close it
+// Close the modal when the user clicks anywhere outside of it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 };
+
+// Rest of your code...
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const APIKEY = "65c35861c34784038c187758";
@@ -62,3 +65,4 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log('Form not found');
     }
 });
+
