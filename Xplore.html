@@ -25,7 +25,7 @@
       <div class="tabs">
           <a href="aboutnp.html">About NP</a>
           <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">Schools & Courses</button>
+            <button class="dropbtn" onclick="myFunction()">Sch&Courses</button>
             <div class="dropdown-content" id="myDropdown">
                 <a href="FullTimeCourses.html">Full Time Courses</a>
                 <a href="https://www.cet.np.edu.sg/">Part Time Courses</a>
@@ -87,24 +87,37 @@
         <p>&copy; 2024 Get to know more about NP. All rights reserved.</p>
       </footer>
 
-      
+      <section id="modal" class="modal">
+        <div class="modal-content">
+            <div class="close" onclick="closeModal()">&times;</div>
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Interested to know more about NP? Get the latest updates via our newsletter</p>
+            <form>
+                <p><label for="newsletter-email">Email:</label></p>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <p><label for="newsletter-password">Password:</label></p>
+                <input type="password" id="newsletter-password" name="newsletter-password" required>
+                <button type="button" onclick="submitForm()">Subscribe Now</button>
+            </form>
+        </div>
+    </section>
   </section>
     
     <!-- Game Form Modal -->
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="close">&times;</span>
             <h2>Enter your name and email</h2>
             <form id="gameForm" action="game1.html" method="POST">
+              <h2>Enter your details</h2>
+              <h4>Name:</h4>
                 <input type="text" id="name" name="name" placeholder="Name" required>
+                <h4>Email:</h4>
                 <input type="email" id="email" name="email" placeholder="Email" required>
                 <button type="submit">Start Game</button>
             </form>
         </div>
-    </div>
-
-  </div>
-  
+    </div>  
     <!--jsFiles-->
     <script src="jsfile/form.js"></script>
     <script src="jsfile/footer.js"></script>
